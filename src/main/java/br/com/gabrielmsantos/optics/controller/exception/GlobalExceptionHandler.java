@@ -1,7 +1,7 @@
-package br.com.gabrielmsantos.otica.controller.exception;
+package br.com.gabrielmsantos.optics.controller.exception;
 
-import br.com.gabrielmsantos.otica.service.exception.BusinessException;
-import br.com.gabrielmsantos.otica.service.exception.NotFoundException;
+import br.com.gabrielmsantos.optics.service.exception.BusinessException;
+import br.com.gabrielmsantos.optics.service.exception.NotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;

@@ -1,8 +1,7 @@
-package br.com.gabrielmsantos.otica.controller;
+package br.com.gabrielmsantos.optics.controller;
 
-
-import br.com.gabrielmsantos.otica.controller.dto.StoreDto;
-import br.com.gabrielmsantos.otica.service.StoreService;
+import br.com.gabrielmsantos.optics.controller.dto.StoreDto;
+import br.com.gabrielmsantos.optics.service.StoreService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;

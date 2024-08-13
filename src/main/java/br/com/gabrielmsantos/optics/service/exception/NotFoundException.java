@@ -1,4 +1,4 @@
-package br.com.gabrielmsantos.otica.service.exception;
+package br.com.gabrielmsantos.optics.service.exception;
 
 public class NotFoundException extends  BusinessException {
 

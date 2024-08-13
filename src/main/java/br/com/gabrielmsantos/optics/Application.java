@@ -1,4 +1,4 @@
-package br.com.gabrielmsantos.otica;
+package br.com.gabrielmsantos.optics;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.servers.Server;

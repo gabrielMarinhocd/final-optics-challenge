@@ -1,4 +1,4 @@
-package br.com.gabrielmsantos.otica.domain.model;
+package br.com.gabrielmsantos.optics.domain.model;
 
 import jakarta.persistence.*;
 

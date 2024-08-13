@@ -1,6 +1,6 @@
-package br.com.gabrielmsantos.otica.domain.repository;
+package br.com.gabrielmsantos.optics.domain.repository;
 
-import br.com.gabrielmsantos.otica.domain.model.Store;
+import br.com.gabrielmsantos.optics.domain.model.Store;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

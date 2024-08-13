@@ -1,6 +1,6 @@
-package br.com.gabrielmsantos.otica.controller.dto;
+package br.com.gabrielmsantos.optics.controller.dto;
 
-import br.com.gabrielmsantos.otica.domain.model.Store;
+import br.com.gabrielmsantos.optics.domain.model.Store;
 
 public record StoreDto(Long id, String titulo, int status) {
 

@@ -1,10 +1,10 @@
-package br.com.gabrielmsantos.otica.service.impl;
+package br.com.gabrielmsantos.optics.service.impl;
 
-import br.com.gabrielmsantos.otica.domain.model.Store;
-import br.com.gabrielmsantos.otica.domain.repository.StoreRepository;
-import br.com.gabrielmsantos.otica.service.StoreService;
-import br.com.gabrielmsantos.otica.service.exception.BusinessException;
-import br.com.gabrielmsantos.otica.service.exception.NotFoundException;
+import br.com.gabrielmsantos.optics.domain.model.Store;
+import br.com.gabrielmsantos.optics.domain.repository.StoreRepository;
+import br.com.gabrielmsantos.optics.service.StoreService;
+import br.com.gabrielmsantos.optics.service.exception.BusinessException;
+import br.com.gabrielmsantos.optics.service.exception.NotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

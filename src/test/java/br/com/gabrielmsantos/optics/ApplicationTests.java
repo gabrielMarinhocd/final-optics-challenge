@@ -1,4 +1,4 @@
-package br.com.gabrielmsantos.otica;
+package br.com.gabrielmsantos.optics;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

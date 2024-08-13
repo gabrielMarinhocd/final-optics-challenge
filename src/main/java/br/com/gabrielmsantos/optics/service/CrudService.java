@@ -1,4 +1,4 @@
-package br.com.gabrielmsantos.otica.service;
+package br.com.gabrielmsantos.optics.service;
 
 import java.util.List;
 
