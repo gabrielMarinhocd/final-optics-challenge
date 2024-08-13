@@ -14,9 +14,6 @@ import static java.util.Optional.ofNullable;
 
 @Service
 public class StoreServiceImpl implements StoreService {
-
-    private static final Long UNCHANGEABLE_STORE_ID = 1L;
-
     private final StoreRepository storeRepository;
 
     public StoreServiceImpl(StoreRepository storeRepository) {
@@ -47,7 +44,7 @@ public class StoreServiceImpl implements StoreService {
             throw new BusinessException("Update IDs must be the same.");
         }
 
-        dbStore.setTitulo(storeToUpdate.getTitulo());
+        dbStore.setTitle(storeToUpdate.getTitle());
         dbStore.setStatus(storeToUpdate.getStatus());
 
         return this.storeRepository.save(dbStore);

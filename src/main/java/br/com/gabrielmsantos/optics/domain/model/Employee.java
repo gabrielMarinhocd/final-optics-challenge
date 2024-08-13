@@ -2,16 +2,19 @@ package br.com.gabrielmsantos.optics.domain.model;
 
 import jakarta.persistence.*;
 
-@Entity(name="tb_store")
-public class Store {
+@Entity(name="tb_employee")
+public class Employee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String title;
+    private String name;
 
     private int status;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private Store store;
 
     public Long getId() {
         return id;
@@ -21,12 +24,12 @@ public class Store {
         this.id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getStatus() {
@@ -35,5 +38,13 @@ public class Store {
 
     public void setStatus(int status) {
         this.status = status;
+    }
+
+    public Store getStore() {
+        return store;
+    }
+
+    public void setStore(Store store) {
+        this.store = store;
     }
 }

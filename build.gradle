@@ -32,7 +32,7 @@ dependencies {
 
 tasks.jar {
 	manifest {
-		attributes["Main-Class"] = "me.gabrielmsantos.Application"
+		attributes["Main-Class"] = "br.com.gabrielmsantos.optics.Application"
 	}
 }
 
