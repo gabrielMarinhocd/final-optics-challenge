@@ -3,6 +3,7 @@ package br.com.gabrielmsantos.optics.controller.dto;
 import br.com.gabrielmsantos.optics.domain.model.*;
 
 import java.util.Date;
+import java.util.List;
 
 public record OrderDto(
         Long id,
@@ -55,7 +56,7 @@ public record OrderDto(
         Custumer custumer,
         Store store,
         StatusOrder statusOrder,
-        PaymentMethods[] paymentMethods
+        List<PaymentMethods> paymentMethods
 ) {
 
     public OrderDto(Order model) {

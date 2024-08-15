@@ -3,6 +3,7 @@ package br.com.gabrielmsantos.optics.domain.model;
 import jakarta.persistence.*;
 
 import java.util.Date;
+import java.util.List;
 
 @Entity(name = "tb_order")
 public class Order {
@@ -118,7 +119,7 @@ public class Order {
     private StatusOrder statusOrder;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private PaymentMethods paymentMethods[];
+    private List<PaymentMethods> PaymentMethods;
 
     public Long getId() {
         return id;
@@ -520,11 +521,11 @@ public class Order {
         this.statusOrder = statusOrder;
     }
 
-    public PaymentMethods[] getPaymentMethods() {
-        return paymentMethods;
+    public List<br.com.gabrielmsantos.optics.domain.model.PaymentMethods> getPaymentMethods() {
+        return PaymentMethods;
     }
 
-    public void setPaymentMethods(PaymentMethods[] paymentMethods) {
-        this.paymentMethods = paymentMethods;
+    public void setPaymentMethods(List<br.com.gabrielmsantos.optics.domain.model.PaymentMethods> paymentMethods) {
+        PaymentMethods = paymentMethods;
     }
 }
