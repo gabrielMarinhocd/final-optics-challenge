@@ -13,7 +13,8 @@ public class Employee {
 
     private int status;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne
+    @JoinColumn(name = "store_id", referencedColumnName = "id")
     private Store store;
 
     public Long getId() {

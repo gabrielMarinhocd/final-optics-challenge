@@ -45,7 +45,7 @@ public record StatusOrderController(StatusOrderService statusOrderService) {
     @PostMapping
     @Operation(summary = "Create a new statusOrder", description = "Create a new statusOrder and return the created statusOrder's data")
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "201", description = "statusOrder created successfully"),
+            @ApiResponse(responseCode = "201", description = "StatusOrder created successfully"),
             @ApiResponse(responseCode = "422", description = "Invalid statusOrder data provided")
     })
     public ResponseEntity<StatusOrderDto> create(@RequestBody StatusOrderDto statusOrderDto) {
@@ -60,8 +60,8 @@ public record StatusOrderController(StatusOrderService statusOrderService) {
     @PutMapping("/{id}")
     @Operation(summary = "Update a statusOrder", description = "Update the data of an existing statusOrder based on its ID")
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "statusOrder updated successfully"),
-            @ApiResponse(responseCode = "404", description = "statusOrder not found"),
+            @ApiResponse(responseCode = "200", description = "StatusOrder updated successfully"),
+            @ApiResponse(responseCode = "404", description = "StatusOrder not found"),
             @ApiResponse(responseCode = "422", description = "Invalid statusOrder data provided")
     })
     public ResponseEntity<StatusOrderDto> update(@PathVariable Long id, @RequestBody StatusOrderDto statusOrderDto) {
@@ -72,8 +72,8 @@ public record StatusOrderController(StatusOrderService statusOrderService) {
     @DeleteMapping("/{id}")
     @Operation(summary = "Delete a statusOrder", description = "Delete an existing statusOrder based on its ID")
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "204", description = "statusOrder deleted successfully"),
-            @ApiResponse(responseCode = "404", description = "statusOrder not found")
+            @ApiResponse(responseCode = "204", description = "StatusOrder deleted successfully"),
+            @ApiResponse(responseCode = "404", description = "StatusOrder not found")
     })
     public ResponseEntity<Void> delete(@PathVariable Long id) {
         statusOrderService.delete(id);
