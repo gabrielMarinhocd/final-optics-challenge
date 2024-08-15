@@ -1,4 +1,4 @@
-# Optics
+# Final Optics Challenge - DIO - GFT - Java Development with AI
 
 RESTful API otica 2023 built in Java 17 with Spring Boot 3.
 
