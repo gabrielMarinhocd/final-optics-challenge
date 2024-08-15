@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 @CrossOrigin
 @RestController
 @RequestMapping("/orders")
-@Tag(name = "orders Controller", description = "RESTFULL API for managing orders.")
+@Tag(name = "Orders Controller", description = "RESTFULL API for managing orders.")
 public record OrderController(OrderService orderService) {
 
     @GetMapping
